@@ -41,20 +41,20 @@
     </colorScheme>
 
     <!-- Looks -->
-    <variant name="cinematicList">
-        <label>Cinematic - list</label>
-        <selectable>true</selectable>
-    </variant>
-    <variant name="cinematicCarousel">
-        <label>Cinematic - carousel</label>
+    <variant name="cleanCarousel">
+        <label>Clean - carousel</label>
         <selectable>true</selectable>
     </variant>
     <variant name="cleanList">
         <label>Clean - list</label>
         <selectable>true</selectable>
     </variant>
-    <variant name="cleanCarousel">
-        <label>Clean - carousel</label>
+    <variant name="cinematicCarousel">
+        <label>Cinematic - carousel</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="cinematicList">
+        <label>Cinematic - list</label>
         <selectable>true</selectable>
     </variant>
 

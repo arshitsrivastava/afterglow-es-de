@@ -1,14 +1,14 @@
 # Afterglow for ES-DE
 
-A dark, stats-rich theme for [ES-DE](https://es-de.org) with two looks, **Cinematic** and **Clean**, ten accent colours and a soft accent glow over your game art.
+A dark, stats-rich theme for [ES-DE](https://es-de.org) with two looks, **Clean** and **Cinematic**, ten accent colours and a soft accent glow over your game art.
 
-![Cinematic home screen](screenshots/01-cinematic-home.jpg)
+![Clean carousel](screenshots/01-clean-carousel.jpg)
 
 ## Features
 
-- **Two looks, each with a list and a carousel game view** (4 variants)
-  - **Cinematic** – full-screen fan art, big type, a logo row on the home screen
-  - **Clean** – a calm system list with a hero card and tidy info tiles
+- **Two looks, each with a carousel and a list game view** (4 variants)
+  - **Clean** (default) – a calm system list, a fan art hero card and tidy info tiles
+  - **Cinematic** – full-screen fan art, big type and a logo row on the home screen
 - **10 accent colours** – Ice blue, Crimson, Ember orange, Gold, Emerald, Teal, Violet, Rose, Monochrome and **System colour** (follows each console's own colour)
 - **Lots of stats**
   - Home screen: game count, favourites, release year, maker, type, *Continue playing*, *Most played* and *Discover* (a random game)
@@ -19,14 +19,21 @@ A dark, stats-rich theme for [ES-DE](https://es-de.org) with two looks, **Cinema
 
 ## Screenshots
 
+### Clean
+
 | | |
 |---|---|
-| ![Cinematic list](screenshots/02-cinematic-list.jpg) | ![Cinematic carousel](screenshots/03-cinematic-carousel.jpg) |
-| *Cinematic – list* | *Cinematic – carousel* |
-| ![System colour accent](screenshots/04-system-colour-accent.jpg) | ![Clean home](screenshots/05-clean-home.jpg) |
-| *System colour accent* | *Clean – home* |
-| ![Clean list](screenshots/06-clean-list.jpg) | ![Clean carousel](screenshots/07-clean-carousel.jpg) |
-| *Clean – list* | *Clean – carousel* |
+| ![Clean home](screenshots/02-clean-home.jpg) | ![Clean list](screenshots/03-clean-list.jpg) |
+| *Home screen* | *List* |
+
+### Cinematic
+
+| | |
+|---|---|
+| ![Cinematic home](screenshots/04-cinematic-home.jpg) | ![Cinematic carousel](screenshots/05-cinematic-carousel.jpg) |
+| *Home screen* | *Carousel* |
+| ![Cinematic list](screenshots/06-cinematic-list.jpg) | |
+| *List* | |
 
 Screenshots use the author's own scraped media; game art is not included with the theme.
 
@@ -44,11 +51,7 @@ Screenshots use the author's own scraped media; game art is not included with th
 
 Afterglow uses *fan art*, *screenshots*, *covers*, *marquees (logos)* and *videos*. Scrape these with ES-DE's built-in scraper for the best result. Games without media fall back gracefully.
 
-## Support
-
-If you enjoy Afterglow, you can support its development:
-
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/arshitsrivastava)
+## Feedback
 
 Bug reports and suggestions are welcome in [Issues](https://github.com/arshitsrivastava/afterglow-es-de/issues).
 
