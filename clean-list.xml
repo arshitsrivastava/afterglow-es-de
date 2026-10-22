@@ -1,0 +1,143 @@
+<!-- Clean look: list game view (mirrors the Clean home screen) -->
+<theme>
+    <view name="gamelist">
+        <!-- Left: game list + box art card -->
+        <text name="listTitle">
+            <pos>0.045 0.06</pos>
+            <size>0.2 0.018</size>
+            <text>${systemName}</text>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.018</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <gamelistinfo name="gamelistInfo">
+            <origin>1 0</origin>
+            <pos>0.31 0.059</pos>
+            <size>0.1 0.019</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.018</fontSize>
+            <horizontalAlignment>right</horizontalAlignment>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </gamelistinfo>
+        <textlist name="gamelistTextlist">
+            <pos>0.03 0.1</pos>
+            <size>0.28 0.47</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>${fsList}</fontSize>
+            <lineSpacing>1.8</lineSpacing>
+            <horizontalMargin>0.016</horizontalMargin>
+            <textHorizontalScrolling>true</textHorizontalScrolling>
+            <textHorizontalScrollDelay>1</textHorizontalScrollDelay>
+            <primaryColor>${textDim}</primaryColor>
+            <secondaryColor>${accent}</secondaryColor>
+            <selectedColor>${accentText}</selectedColor>
+            <selectedSecondaryColor>${accentText}</selectedSecondaryColor>
+            <selectedBackgroundColor>${accent}</selectedBackgroundColor>
+            <selectedSecondaryBackgroundColor>${accent}</selectedSecondaryBackgroundColor>
+            <selectedBackgroundMargins>0.008 0.008</selectedBackgroundMargins>
+            <selectedBackgroundCornerRadius>0.02</selectedBackgroundCornerRadius>
+            <selectorColor>00000000</selectorColor>
+            <zIndex>50</zIndex>
+        </textlist>
+        <image name="boxCard">
+            <pos>0.03 0.585</pos>
+            <size>0.295 0.335</size>
+        </image>
+        <image name="cover">
+            <origin>0.5 0.5</origin>
+            <pos>0.1775 0.7525</pos>
+            <maxSize>0.26 0.3</maxSize>
+            <imageType>cover, 3dbox</imageType>
+            <cornerRadius>0.004</cornerRadius>
+            <interpolation>linear</interpolation>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>30</zIndex>
+        </image>
+
+        <!-- Right top: hero -->
+        <image name="heroCard">
+            <pos>0.34 0.05</pos>
+            <size>0.635 0.5</size>
+        </image>
+        <video name="video">
+            <pos>0.34 0.05</pos>
+            <cropSize>0.635 0.5</cropSize>
+        </video>
+        <image name="heroShade">
+            <pos>0.34 0.05</pos>
+            <size>0.635 0.5</size>
+        </image>
+        <text name="gameName">
+            <pos>0.37 0.405</pos>
+        </text>
+        <datetime name="mdReleased"><pos>0.37 0.475</pos></datetime>
+        <text name="subDot"><pos>0.408 0.475</pos></text>
+        <text name="mdGenre"><pos>0.422 0.475</pos></text>
+        <rating name="rating">
+            <origin>1 0</origin>
+            <pos>0.945 0.475</pos>
+            <size>0 0.026</size>
+        </rating>
+        <badges name="badges">
+            <origin>1 0</origin>
+            <pos>0.945 0.425</pos>
+            <size>0.16 0.032</size>
+            <horizontalAlignment>right</horizontalAlignment>
+        </badges>
+
+        <!-- Right bottom: 2 x 2 tiles -->
+        <image name="tile1, tile2, tile3, tile4">
+            <size>0.31 0.16</size>
+        </image>
+        <image name="tile1"><pos>0.34 0.585</pos></image>
+        <image name="tile2"><pos>0.665 0.585</pos></image>
+        <image name="tile3"><pos>0.34 0.76</pos></image>
+        <image name="tile4"><pos>0.665 0.76</pos></image>
+        <text name="tileTitle1"><pos>0.358 0.605</pos></text>
+        <text name="tileTitle2"><pos>0.683 0.605</pos></text>
+        <text name="tileTitle3"><pos>0.358 0.78</pos></text>
+        <text name="tileTitle4"><pos>0.683 0.78</pos></text>
+
+        <!-- About -->
+        <text name="description">
+            <pos>0.358 0.632</pos>
+            <size>0.275 0.077</size>
+        </text>
+
+        <!-- Your progress -->
+        <text name="mdPlaytime">
+            <origin>0 0.5</origin>
+            <pos>0.683 0.672</pos>
+            <size>0.14 0.036</size>
+        </text>
+        <text name="lblPlaycount"><pos>0.83 0.632</pos></text>
+        <text name="mdPlaycount"><pos>0.83 0.65</pos></text>
+        <text name="lblLastplayed"><pos>0.83 0.687</pos></text>
+        <datetime name="mdLastplayed"><pos>0.83 0.705</pos></datetime>
+
+        <!-- Credits -->
+        <text name="lblDeveloper"><pos>0.358 0.81</pos></text>
+        <text name="mdDeveloper"><pos>0.358 0.828</pos></text>
+        <text name="lblPublisher"><pos>0.505 0.81</pos></text>
+        <text name="mdPublisher"><pos>0.505 0.828</pos></text>
+        <text name="lblPlayers"><pos>0.358 0.865</pos></text>
+        <text name="mdPlayers"><pos>0.358 0.883</pos></text>
+        <text name="lblReleasedFull"><pos>0.505 0.865</pos></text>
+        <datetime name="mdReleasedFull"><pos>0.505 0.883</pos></datetime>
+
+        <!-- Technical -->
+        <text name="lblEmulator"><pos>0.683 0.81</pos></text>
+        <text name="mdEmulator">
+            <pos>0.683 0.828</pos>
+            <size>0.275 0.02</size>
+        </text>
+        <text name="lblFile"><pos>0.683 0.865</pos></text>
+        <text name="mdFile">
+            <pos>0.683 0.883</pos>
+            <size>0.275 0.02</size>
+        </text>
+    </view>
+</theme>

@@ -1,0 +1,56 @@
+<!-- Cinematic look: elements shared by the list and carousel game views -->
+<theme>
+    <view name="gamelist">
+        <image name="bgArt">
+            <pos>0 0</pos>
+            <cropSize>1 1</cropSize>
+            <imageType>fanart, screenshot</imageType>
+            <interpolation>linear</interpolation>
+            <scrollFadeIn>true</scrollFadeIn>
+            <opacity>0.85</opacity>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="shadeLeft">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${gradLeft}</path>
+            <color>${bgColor}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="shadeBottom">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${gradBottom}</path>
+            <color>${bgColor}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="glow">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./assets/images/ambient.svg</path>
+            <color>${accent}</color>
+            <opacity>0.45</opacity>
+            <zIndex>4</zIndex>
+        </image>
+
+        <image name="systemLogo">
+            <pos>0.05 0.05</pos>
+            <maxSize>0.16 0.06</maxSize>
+            <path>${logoWhite}</path>
+            <interpolation>linear</interpolation>
+            <color>FFFFFFdd</color>
+            <zIndex>40</zIndex>
+        </image>
+        <gamelistinfo name="gamelistInfo">
+            <origin>1 0</origin>
+            <pos>0.95 0.075</pos>
+            <size>0.3 0.022</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.02</fontSize>
+            <horizontalAlignment>right</horizontalAlignment>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </gamelistinfo>
+
+    </view>
+</theme>

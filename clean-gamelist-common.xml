@@ -1,0 +1,151 @@
+<!-- Clean look: styling shared by the list and carousel game views (positions set per layout) -->
+<theme>
+    <variables>
+        <cleanCard>161a23</cleanCard>
+    </variables>
+    <view name="gamelist">
+        <image name="glow">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./assets/images/ambient.svg</path>
+            <color>${accent}</color>
+            <opacity>0.28</opacity>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- Hero: fan art first, then the game video -->
+        <image name="heroCard">
+            <path>${pixel}</path>
+            <color>${cleanCard}</color>
+            <cornerRadius>0.012</cornerRadius>
+            <zIndex>1</zIndex>
+        </image>
+        <video name="video">
+            <imageType>fanart, screenshot, titlescreen</imageType>
+            <delay>2</delay>
+            <fadeInTime>1</fadeInTime>
+            <imageCornerRadius>0.012</imageCornerRadius>
+            <videoCornerRadius>0.012</videoCornerRadius>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>20</zIndex>
+        </video>
+        <image name="heroShade">
+            <path>${gradBottom}</path>
+            <color>${bgColor}</color>
+            <cornerRadius>0.012</cornerRadius>
+            <zIndex>21</zIndex>
+        </image>
+        <text name="gameName">
+            <size>0.58 0.055</size>
+            <metadata>name</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.055</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <datetime name="mdReleased">
+            <size>0.05 0.024</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>${textDim}</color>
+        </datetime>
+        <text name="subDot">
+            <size>0.012 0.024</size>
+            <text>·</text>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="mdGenre">
+            <size>0.3 0.024</size>
+            <fontSize>0.024</fontSize>
+            <color>${textDim}</color>
+            <defaultValue>:space:</defaultValue>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+        </text>
+
+        <!-- Tiles -->
+        <image name="tile1, tile2, tile3, tile4, boxCard">
+            <path>${pixel}</path>
+            <color>${cleanCard}</color>
+            <cornerRadius>0.01</cornerRadius>
+            <zIndex>5</zIndex>
+        </image>
+        <text name="tileTitle1, tileTitle2, tileTitle3, tileTitle4">
+            <size>0.2 0.016</size>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.016</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${accent}</color>
+            <metadataElement>true</metadataElement>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tileTitle1"><text>About</text></text>
+        <text name="tileTitle2"><text>Your progress</text></text>
+        <text name="tileTitle3"><text>Credits</text></text>
+        <text name="tileTitle4"><text>Technical</text></text>
+
+        <text name="description">
+            <metadata>description</metadata>
+            <container>true</container>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.019</fontSize>
+            <lineSpacing>1.35</lineSpacing>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="mdPlaytime">
+            <size>0.2 0.036</size>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.036</fontSize>
+            <color>${textColor}</color>
+        </text>
+
+        <!-- Small label / value pairs -->
+        <text name="lblPlaycount, lblLastplayed, lblDeveloper, lblPublisher, lblPlayers, lblReleasedFull, lblEmulator, lblFile">
+            <size>0.13 0.015</size>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.015</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <metadataElement>true</metadataElement>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="lblReleasedFull"><text>Released</text></text>
+        <text name="lblEmulator"><text>Emulator</text></text>
+        <text name="lblFile"><text>File</text></text>
+        <text name="mdPlaycount, mdDeveloper, mdPublisher, mdPlayers, mdEmulator, mdFile">
+            <size>0.13 0.02</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>${textColor}</color>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="mdEmulator"><metadata>emulator</metadata></text>
+        <text name="mdFile">
+            <metadata>physicalNameExtension</metadata>
+            <color>${textDim}</color>
+        </text>
+        <datetime name="mdLastplayed, mdReleasedFull">
+            <size>0.13 0.02</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </datetime>
+        <datetime name="mdReleasedFull">
+            <metadata>releasedate</metadata>
+            <defaultValue>-</defaultValue>
+        </datetime>
+
+        <text name="lblReleased, lblGenre, lblPlaytime">
+            <visible>false</visible>
+        </text>
+    </view>
+</theme>

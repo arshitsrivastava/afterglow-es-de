@@ -1,0 +1,162 @@
+<!-- Clean look: carousel game view (hero, cover row, four tiles) -->
+<theme>
+    <view name="gamelist">
+        <text name="listTitle">
+            <pos>0.045 0.055</pos>
+            <size>0.4 0.018</size>
+            <text>${systemName}</text>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.018</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <gamelistinfo name="gamelistInfo">
+            <origin>1 0</origin>
+            <pos>0.955 0.06</pos>
+            <size>0.2 0.019</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.018</fontSize>
+            <horizontalAlignment>right</horizontalAlignment>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </gamelistinfo>
+        <image name="boxCard">
+            <visible>false</visible>
+        </image>
+
+        <!-- Hero -->
+        <image name="heroCard">
+            <pos>0.03 0.095</pos>
+            <size>0.945 0.425</size>
+        </image>
+        <video name="video">
+            <pos>0.03 0.095</pos>
+            <cropSize>0.945 0.425</cropSize>
+        </video>
+        <image name="heroShade">
+            <pos>0.03 0.095</pos>
+            <size>0.945 0.425</size>
+        </image>
+        <text name="gameName">
+            <pos>0.06 0.375</pos>
+            <size>0.6 0.055</size>
+        </text>
+        <datetime name="mdReleased"><pos>0.06 0.445</pos></datetime>
+        <text name="subDot"><pos>0.098 0.445</pos></text>
+        <text name="mdGenre"><pos>0.112 0.445</pos></text>
+        <rating name="rating">
+            <origin>1 0</origin>
+            <pos>0.945 0.445</pos>
+            <size>0 0.026</size>
+        </rating>
+        <badges name="badges">
+            <origin>1 0</origin>
+            <pos>0.945 0.395</pos>
+            <size>0.16 0.032</size>
+            <horizontalAlignment>right</horizontalAlignment>
+        </badges>
+
+        <!-- Cover row -->
+        <image name="selBar">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.75</pos>
+            <size>0.04 0.005</size>
+            <path>${pixel}</path>
+            <color>${accent}</color>
+            <cornerRadius>0.002</cornerRadius>
+            <zIndex>46</zIndex>
+        </image>
+        <carousel name="gamelistCarousel">
+            <type>horizontal</type>
+            <pos>0.03 0.54</pos>
+            <size>0.945 0.205</size>
+            <imageType>cover</imageType>
+            <itemSize>0.07 0.165</itemSize>
+            <itemScale>1.15</itemScale>
+            <maxItemCount>11</maxItemCount>
+            <itemVerticalAlignment>bottom</itemVerticalAlignment>
+            <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+            <imageCornerRadius>0.005</imageCornerRadius>
+            <imageInterpolation>linear</imageInterpolation>
+            <fastScrolling>true</fastScrolling>
+            <color>00000000</color>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.017</fontSize>
+            <textColor>${textColor}</textColor>
+            <textBackgroundColor>${cleanCard}</textBackgroundColor>
+            <zIndex>50</zIndex>
+        </carousel>
+
+        <!-- Tiles in a row -->
+        <image name="tile1, tile2, tile3, tile4">
+            <size>0.228 0.145</size>
+        </image>
+        <image name="tile1"><pos>0.03 0.775</pos></image>
+        <image name="tile2"><pos>0.269 0.775</pos></image>
+        <image name="tile3"><pos>0.508 0.775</pos></image>
+        <image name="tile4"><pos>0.747 0.775</pos></image>
+        <text name="tileTitle1"><pos>0.045 0.792</pos></text>
+        <text name="tileTitle2"><pos>0.284 0.792</pos></text>
+        <text name="tileTitle3"><pos>0.523 0.792</pos></text>
+        <text name="tileTitle4"><pos>0.762 0.792</pos></text>
+
+        <!-- About -->
+        <text name="description">
+            <pos>0.045 0.818</pos>
+            <size>0.2 0.077</size>
+        </text>
+
+        <!-- Your progress -->
+        <text name="mdPlaytime">
+            <origin>0 0.5</origin>
+            <pos>0.284 0.859</pos>
+            <size>0.102 0.029</size>
+            <fontSize>0.029</fontSize>
+        </text>
+        <text name="lblPlaycount, lblLastplayed">
+            <size>0.09 0.015</size>
+        </text>
+        <text name="mdPlaycount">
+            <size>0.08 0.02</size>
+        </text>
+        <datetime name="mdLastplayed">
+            <size>0.11 0.02</size>
+        </datetime>
+        <text name="lblPlaycount"><pos>0.39 0.815</pos></text>
+        <text name="mdPlaycount"><pos>0.39 0.833</pos></text>
+        <text name="lblLastplayed"><pos>0.39 0.865</pos></text>
+        <datetime name="mdLastplayed"><pos>0.39 0.883</pos></datetime>
+
+        <!-- Credits -->
+        <text name="lblDeveloper, lblPublisher, lblPlayers, lblReleasedFull">
+            <size>0.1 0.015</size>
+        </text>
+        <text name="mdDeveloper, mdPublisher, mdPlayers">
+            <size>0.1 0.02</size>
+        </text>
+        <datetime name="mdReleasedFull">
+            <size>0.1 0.02</size>
+        </datetime>
+        <text name="lblDeveloper"><pos>0.523 0.815</pos></text>
+        <text name="mdDeveloper"><pos>0.523 0.833</pos></text>
+        <text name="lblPublisher"><pos>0.628 0.815</pos></text>
+        <text name="mdPublisher"><pos>0.628 0.833</pos></text>
+        <text name="lblPlayers"><pos>0.523 0.865</pos></text>
+        <text name="mdPlayers"><pos>0.523 0.883</pos></text>
+        <text name="lblReleasedFull"><pos>0.628 0.865</pos></text>
+        <datetime name="mdReleasedFull"><pos>0.628 0.883</pos></datetime>
+
+        <!-- Technical -->
+        <text name="lblEmulator"><pos>0.762 0.815</pos></text>
+        <text name="mdEmulator">
+            <pos>0.762 0.833</pos>
+            <size>0.2 0.02</size>
+        </text>
+        <text name="lblFile"><pos>0.762 0.865</pos></text>
+        <text name="mdFile">
+            <pos>0.762 0.883</pos>
+            <size>0.2 0.02</size>
+        </text>
+    </view>
+</theme>

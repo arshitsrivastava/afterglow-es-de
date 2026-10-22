@@ -1,0 +1,24 @@
+<!-- Shared by all looks -->
+<theme>
+    <view name="system, gamelist">
+        <image name="base">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${pixel}</path>
+            <tile>true</tile>
+            <color>${bgColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+        <helpsystem name="help">
+            <origin>0 1</origin>
+            <pos>0.03 0.975</pos>
+            <textColor>${textDim}</textColor>
+            <iconColor>${textDim}</iconColor>
+            <textColorDimmed>${textMute}</textColorDimmed>
+            <iconColorDimmed>${textMute}</iconColorDimmed>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.02</fontSize>
+            <entrySpacing>0.012</entrySpacing>
+        </helpsystem>
+    </view>
+</theme>

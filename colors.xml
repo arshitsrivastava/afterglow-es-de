@@ -1,0 +1,63 @@
+<!-- Accent colour schemes. accent = highlight colour, accentText = text drawn on top of the accent. -->
+<theme>
+    <colorScheme name="ice">
+        <variables>
+            <accent>4da3ff</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="system">
+        <variables>
+            <accent>${systemColor}</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="crimson">
+        <variables>
+            <accent>e5383b</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="ember">
+        <variables>
+            <accent>ff7a1a</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="gold">
+        <variables>
+            <accent>e8b84a</accent>
+            <accentText>15120a</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="emerald">
+        <variables>
+            <accent>2ecc71</accent>
+            <accentText>06140c</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="teal">
+        <variables>
+            <accent>14c8c8</accent>
+            <accentText>041414</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="violet">
+        <variables>
+            <accent>9b6bff</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="rose">
+        <variables>
+            <accent>ff5c9a</accent>
+            <accentText>ffffff</accentText>
+        </variables>
+    </colorScheme>
+    <colorScheme name="mono">
+        <variables>
+            <accent>e6e8ee</accent>
+            <accentText>0b0d12</accentText>
+        </variables>
+    </colorScheme>
+</theme>

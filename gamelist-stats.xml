@@ -1,0 +1,71 @@
+<!-- Game view stat labels/values, rating and badges styling shared by all looks (positions set per layout) -->
+<theme>
+    <view name="gamelist">
+        <text name="lblReleased, lblGenre, lblPlayers, lblPlaytime, lblDeveloper, lblPublisher, lblPlaycount, lblLastplayed">
+            <size>0.14 ${fsLabel}</size>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>${fsLabel}</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <metadataElement>true</metadataElement>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="lblReleased"><text>Released</text></text>
+        <text name="lblGenre"><text>Genre</text></text>
+        <text name="lblPlayers"><text>Players</text></text>
+        <text name="lblPlaytime"><text>Time played</text></text>
+        <text name="lblDeveloper"><text>Developer</text></text>
+        <text name="lblPublisher"><text>Publisher</text></text>
+        <text name="lblPlaycount"><text>Launches</text></text>
+        <text name="lblLastplayed"><text>Last played</text></text>
+
+        <text name="mdGenre, mdPlayers, mdPlaytime, mdDeveloper, mdPublisher, mdPlaycount">
+            <size>0.14 ${fsValue}</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>${fsValue}</fontSize>
+            <color>${textColor}</color>
+            <defaultValue>-</defaultValue>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="mdGenre"><metadata>genre</metadata></text>
+        <text name="mdPlayers"><metadata>players</metadata></text>
+        <text name="mdPlaytime">
+            <metadata>playtime</metadata>
+            <color>${accent}</color>
+        </text>
+        <text name="mdDeveloper"><metadata>developer</metadata></text>
+        <text name="mdPublisher"><metadata>publisher</metadata></text>
+        <text name="mdPlaycount"><metadata>playcount</metadata></text>
+        <datetime name="mdReleased, mdLastplayed">
+            <size>0.14 ${fsValue}</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>${fsValue}</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </datetime>
+        <datetime name="mdReleased">
+            <metadata>releasedate</metadata>
+            <format>%Y</format>
+            <defaultValue>-</defaultValue>
+        </datetime>
+        <datetime name="mdLastplayed">
+            <metadata>lastplayed</metadata>
+        </datetime>
+
+        <rating name="rating">
+            <size>0 0.028</size>
+            <color>${accent}</color>
+            <zIndex>45</zIndex>
+        </rating>
+        <badges name="badges">
+            <size>0.16 0.032</size>
+            <lines>1</lines>
+            <itemsPerLine>6</itemsPerLine>
+            <itemMargin>0.008 0</itemMargin>
+            <slots>favorite completed kidgame broken manual controller</slots>
+            <badgeIconColor>${textColor}</badgeIconColor>
+            <controllerIconColor>${textColor}</controllerIconColor>
+            <zIndex>45</zIndex>
+        </badges>
+    </view>
+</theme>

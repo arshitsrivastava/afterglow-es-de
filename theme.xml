@@ -1,0 +1,82 @@
+<!--
+    Afterglow for ES-DE (afterglow-es-de)
+    A dark theme with two looks (Cinematic, Clean), each with a list and a carousel game view.
+    System metadata and logos: ES-DE theme asset repositories.
+    Fonts: Poppins, Bebas Neue (SIL Open Font License, see assets/fonts/OFL.txt).
+-->
+<theme>
+    <variables>
+        <fontRegular>./assets/fonts/Poppins-Regular.ttf</fontRegular>
+        <fontLight>./assets/fonts/Poppins-Light.ttf</fontLight>
+        <fontSemi>./assets/fonts/Poppins-SemiBold.ttf</fontSemi>
+        <fontBold>./assets/fonts/Poppins-Bold.ttf</fontBold>
+        <fontDisplay>./assets/fonts/BebasNeue-Regular.ttf</fontDisplay>
+
+        <pixel>./assets/images/pixel.png</pixel>
+        <gradLeft>./assets/images/grad-left.svg</gradLeft>
+        <gradBottom>./assets/images/grad-bottom.svg</gradBottom>
+        <frame>./assets/images/frame.svg</frame>
+
+        <logoWhite>./logos/white/${system.theme}.svg</logoWhite>
+
+        <bgColor>080a10</bgColor>
+        <panelColor>121620</panelColor>
+        <panelColor2>1a1f2b</panelColor2>
+        <textColor>eef0f5</textColor>
+        <textDim>a7adbb</textDim>
+        <textMute>6b7280</textMute>
+    </variables>
+
+    <!-- System metadata (description, maker, year, colours) -->
+    <include>./metadata/_default.xml</include>
+    <include>./metadata/${system.theme}.xml</include>
+    <!-- Accent colour schemes (after metadata so "System colour" can use it) -->
+    <include>./colors.xml</include>
+
+    <fontSize name="medium">
+        <variables>
+            <fsList>0.028</fsList>
+            <fsBody>0.023</fsBody>
+            <fsSmall>0.019</fsSmall>
+            <fsLabel>0.016</fsLabel>
+            <fsValue>0.024</fsValue>
+        </variables>
+    </fontSize>
+    <fontSize name="large">
+        <variables>
+            <fsList>0.033</fsList>
+            <fsBody>0.027</fsBody>
+            <fsSmall>0.022</fsSmall>
+            <fsLabel>0.018</fsLabel>
+            <fsValue>0.028</fsValue>
+        </variables>
+    </fontSize>
+
+    <variant name="all">
+        <include>./common.xml</include>
+        <include>./gamelist-stats.xml</include>
+    </variant>
+    <variant name="cinematicList, cinematicCarousel">
+        <include>./cinematic-system.xml</include>
+    </variant>
+    <variant name="cinematicList">
+        <include>./cinematic-gamelist-common.xml</include>
+        <include>./cinematic-list.xml</include>
+    </variant>
+    <variant name="cinematicCarousel">
+        <include>./cinematic-gamelist-common.xml</include>
+        <include>./cinematic-carousel.xml</include>
+    </variant>
+    <variant name="cleanList, cleanCarousel">
+        <include>./clean-system.xml</include>
+    </variant>
+    <variant name="cleanList, cleanCarousel">
+        <include>./clean-gamelist-common.xml</include>
+    </variant>
+    <variant name="cleanList">
+        <include>./clean-list.xml</include>
+    </variant>
+    <variant name="cleanCarousel">
+        <include>./clean-carousel.xml</include>
+    </variant>
+</theme>

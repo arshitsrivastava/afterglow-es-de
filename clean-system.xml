@@ -1,0 +1,319 @@
+<!-- Clean look: home screen (system list on the left, details on the right) -->
+<theme>
+    <variables>
+        <cleanCard>161a23</cleanCard>
+    </variables>
+    <view name="system">
+        <gameselector name="bgGame">
+            <selection>random</selection>
+        </gameselector>
+        <gameselector name="lastGame">
+            <selection>lastplayed</selection>
+        </gameselector>
+        <gameselector name="topGame">
+            <selection>mostplayed</selection>
+        </gameselector>
+        <gameselector name="pickGame">
+            <selection>random</selection>
+        </gameselector>
+
+        <image name="glow">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./assets/images/ambient.svg</path>
+            <color>${accent}</color>
+            <opacity>0.28</opacity>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- System list -->
+        <text name="listTitle">
+            <pos>0.045 0.06</pos>
+            <size>0.26 0.018</size>
+            <text>Systems</text>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.018</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <textlist name="systemTextlist">
+            <pos>0.03 0.1</pos>
+            <size>0.28 0.47</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>${fsList}</fontSize>
+            <lineSpacing>1.8</lineSpacing>
+            <horizontalMargin>0.016</horizontalMargin>
+            <textHorizontalScrolling>true</textHorizontalScrolling>
+            <textHorizontalScrollDelay>1</textHorizontalScrollDelay>
+            <primaryColor>${textDim}</primaryColor>
+            <secondaryColor>${textDim}</secondaryColor>
+            <selectedColor>${accentText}</selectedColor>
+            <selectedSecondaryColor>${accentText}</selectedSecondaryColor>
+            <selectedBackgroundColor>${accent}</selectedBackgroundColor>
+            <selectedSecondaryBackgroundColor>${accent}</selectedSecondaryBackgroundColor>
+            <selectedBackgroundMargins>0.008 0.008</selectedBackgroundMargins>
+            <selectedBackgroundCornerRadius>0.02</selectedBackgroundCornerRadius>
+            <selectorColor>00000000</selectorColor>
+            <zIndex>50</zIndex>
+        </textlist>
+
+        <!-- About card under the system list -->
+        <image name="aboutCard">
+            <pos>0.03 0.585</pos>
+            <size>0.295 0.335</size>
+            <path>${pixel}</path>
+            <color>${cleanCard}</color>
+            <cornerRadius>0.01</cornerRadius>
+            <zIndex>5</zIndex>
+        </image>
+        <text name="aboutLabel">
+            <pos>0.048 0.605</pos>
+            <size>0.26 0.016</size>
+            <text>About</text>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.016</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${accent}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="aboutKey1, aboutKey2, aboutKey3">
+            <size>0.07 0.019</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.019</fontSize>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="aboutVal1, aboutVal2, aboutVal3">
+            <size>0.18 0.019</size>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.019</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="aboutKey1"><pos>0.048 0.637</pos><text>Maker</text></text>
+        <text name="aboutVal1"><pos>0.12 0.637</pos><text>${systemManufacturer}</text></text>
+        <text name="aboutKey2"><pos>0.048 0.667</pos><text>Released</text></text>
+        <text name="aboutVal2"><pos>0.12 0.667</pos><text>${systemReleaseDateFormated}</text></text>
+        <text name="aboutKey3"><pos>0.048 0.697</pos><text>Type</text></text>
+        <text name="aboutVal3"><pos>0.12 0.697</pos><text>${systemHardwareType}</text></text>
+        <text name="aboutDesc">
+            <pos>0.048 0.737</pos>
+            <size>0.256 0.154</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.019</fontSize>
+            <lineSpacing>1.35</lineSpacing>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+
+        <!-- Hero card -->
+        <image name="heroCard">
+            <pos>0.34 0.05</pos>
+            <size>0.635 0.5</size>
+            <path>${pixel}</path>
+            <color>${cleanCard}</color>
+            <cornerRadius>0.012</cornerRadius>
+            <zIndex>1</zIndex>
+        </image>
+        <image name="heroArt">
+            <pos>0.34 0.05</pos>
+            <cropSize>0.635 0.5</cropSize>
+            <imageType>fanart, screenshot, titlescreen</imageType>
+            <gameselector>bgGame</gameselector>
+            <cornerRadius>0.012</cornerRadius>
+            <interpolation>linear</interpolation>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="heroShade">
+            <pos>0.34 0.05</pos>
+            <size>0.635 0.5</size>
+            <path>${gradBottom}</path>
+            <color>${bgColor}</color>
+            <cornerRadius>0.012</cornerRadius>
+            <zIndex>3</zIndex>
+        </image>
+        <text name="sysName">
+            <pos>0.37 0.4</pos>
+            <size>0.58 0.06</size>
+            <text>${systemName}</text>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.06</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="sysSub">
+            <pos>0.37 0.475</pos>
+            <size>0.58 0.024</size>
+            <text>${systemManufacturer}   ·   ${systemReleaseYear}   ·   ${systemHardwareType}</text>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+
+        <!-- Tiles: 2 x 2 -->
+        <image name="tile1, tile2, tile3, tile4">
+            <size>0.31 0.16</size>
+            <path>${pixel}</path>
+            <color>${cleanCard}</color>
+            <cornerRadius>0.01</cornerRadius>
+            <zIndex>5</zIndex>
+        </image>
+        <image name="tile1"><pos>0.34 0.585</pos></image>
+        <image name="tile2"><pos>0.665 0.585</pos></image>
+        <image name="tile3"><pos>0.34 0.76</pos></image>
+        <image name="tile4"><pos>0.665 0.76</pos></image>
+        <text name="tileLabel1, tileLabel2, tileLabel3, tileLabel4">
+            <size>0.28 0.016</size>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.016</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${accent}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tileLabel1">
+            <pos>0.358 0.605</pos>
+            <text>Library</text>
+            <color>${textMute}</color>
+        </text>
+        <text name="tileLabel2">
+            <pos>0.683 0.605</pos>
+            <text>Continue playing</text>
+        </text>
+        <text name="tileLabel3">
+            <pos>0.358 0.78</pos>
+            <text>Most played</text>
+        </text>
+        <text name="tileLabel4">
+            <pos>0.683 0.78</pos>
+            <text>Discover</text>
+        </text>
+
+        <!-- Library -->
+        <text name="tileGames">
+            <pos>0.358 0.635</pos>
+            <size>0.28 0.05</size>
+            <systemdata>gamecountGames</systemdata>
+            <fontPath>${fontBold}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tileFavs">
+            <pos>0.358 0.7</pos>
+            <size>0.28 0.019</size>
+            <systemdata>gamecountFavorites</systemdata>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.019</fontSize>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+
+        <!-- Game tiles -->
+        <image name="tileCover2, tileCover3, tileCover4">
+            <maxSize>0.045 0.1</maxSize>
+            <imageType>cover, miximage</imageType>
+            <cornerRadius>0.003</cornerRadius>
+            <interpolation>linear</interpolation>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="tileCover2">
+            <pos>0.683 0.632</pos>
+            <gameselector>lastGame</gameselector>
+        </image>
+        <image name="tileCover3">
+            <pos>0.358 0.807</pos>
+            <gameselector>topGame</gameselector>
+        </image>
+        <image name="tileCover4">
+            <pos>0.683 0.807</pos>
+            <gameselector>pickGame</gameselector>
+        </image>
+        <text name="tileName2, tileName3, tileName4">
+            <size>0.23 0.024</size>
+            <metadata>name</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tileName2">
+            <pos>0.738 0.637</pos>
+            <gameselector>lastGame</gameselector>
+        </text>
+        <text name="tileName3">
+            <pos>0.413 0.812</pos>
+            <gameselector>topGame</gameselector>
+        </text>
+        <text name="tileName4">
+            <pos>0.738 0.812</pos>
+            <gameselector>pickGame</gameselector>
+        </text>
+        <text name="tileTime2, tileTime3, tileGenre4">
+            <size>0.23 0.02</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>${textDim}</color>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tileTime2">
+            <pos>0.738 0.672</pos>
+            <metadata>playtime</metadata>
+            <gameselector>lastGame</gameselector>
+        </text>
+        <text name="tileTime3">
+            <pos>0.413 0.847</pos>
+            <metadata>playtime</metadata>
+            <gameselector>topGame</gameselector>
+        </text>
+        <text name="tileGenre4">
+            <pos>0.738 0.847</pos>
+            <metadata>genre</metadata>
+            <defaultValue>:space:</defaultValue>
+            <gameselector>pickGame</gameselector>
+        </text>
+        <datetime name="tileWhen2, tileYear4">
+            <size>0.23 0.018</size>
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </datetime>
+        <datetime name="tileWhen2">
+            <pos>0.738 0.702</pos>
+            <metadata>lastplayed</metadata>
+            <gameselector>lastGame</gameselector>
+        </datetime>
+        <datetime name="tileYear4">
+            <pos>0.738 0.877</pos>
+            <metadata>releasedate</metadata>
+            <format>%Y</format>
+            <defaultValue>:space:</defaultValue>
+            <gameselector>pickGame</gameselector>
+        </datetime>
+        <text name="tilePlaysLabel3, tilePlays3">
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>${textMute}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="tilePlaysLabel3">
+            <pos>0.413 0.877</pos>
+            <size>0.06 0.018</size>
+            <text>Launches</text>
+        </text>
+        <text name="tilePlays3">
+            <pos>0.473 0.877</pos>
+            <size>0.1 0.018</size>
+            <metadata>playcount</metadata>
+            <gameselector>topGame</gameselector>
+        </text>
+    </view>
+</theme>

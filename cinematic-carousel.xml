@@ -1,0 +1,159 @@
+<!-- Cinematic look: big carousel game view -->
+<theme>
+    <view name="gamelist">
+        <!-- Extra dimming so text stays readable over bright fan art -->
+        <image name="carShade">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${pixel}</path>
+            <color>${bgColor}66</color>
+            <zIndex>3</zIndex>
+        </image>
+
+        <image name="marquee">
+            <pos>0.056 0.105</pos>
+            <maxSize>0.36 0.15</maxSize>
+            <imageType>marquee</imageType>
+            <interpolation>linear</interpolation>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>35</zIndex>
+        </image>
+
+        <!-- Video with rating and badges under it -->
+        <video name="video">
+            <origin>1 0</origin>
+            <pos>0.955 0.105</pos>
+            <maxSize>0.37 0.38</maxSize>
+            <imageType>screenshot, titlescreen</imageType>
+            <delay>1.5</delay>
+            <fadeInTime>1</fadeInTime>
+            <imageCornerRadius>0.008</imageCornerRadius>
+            <videoCornerRadius>0.008</videoCornerRadius>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>30</zIndex>
+        </video>
+        <rating name="rating">
+            <origin>0 0</origin>
+            <pos>0.585 0.505</pos>
+        </rating>
+        <badges name="badges">
+            <origin>1 0</origin>
+            <pos>0.955 0.5</pos>
+            <horizontalAlignment>right</horizontalAlignment>
+        </badges>
+
+        <!-- Stats grid: 2 rows x 5 columns -->
+        <text name="lblReleased, lblGenre, lblPlayers, lblPlaytime, lblDeveloper, lblPublisher, lblPlaycount, lblLastplayed, lblEmulator, lblFile">
+            <size>0.1 ${fsLabel}</size>
+        </text>
+        <text name="lblEmulator, lblFile">
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>${fsLabel}</fontSize>
+            <letterCase>uppercase</letterCase>
+            <color>${textMute}</color>
+            <metadataElement>true</metadataElement>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="lblEmulator"><text>Emulator</text></text>
+        <text name="lblFile"><text>File</text></text>
+        <text name="mdGenre, mdPlayers, mdPlaytime, mdDeveloper, mdPublisher, mdPlaycount, mdEmulator, mdFile">
+            <size>0.1 ${fsValue}</size>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+        </text>
+        <text name="mdEmulator, mdFile">
+            <fontPath>${fontRegular}</fontPath>
+            <fontSize>${fsValue}</fontSize>
+            <color>${textColor}</color>
+            <zIndex>40</zIndex>
+        </text>
+        <text name="mdEmulator"><metadata>emulator</metadata></text>
+        <text name="mdFile">
+            <metadata>physicalNameExtension</metadata>
+            <color>${textDim}</color>
+        </text>
+        <datetime name="mdReleased, mdLastplayed">
+            <size>0.1 ${fsValue}</size>
+        </datetime>
+
+        <text name="lblReleased"><pos>0.056 0.29</pos></text>
+        <datetime name="mdReleased"><pos>0.056 0.313</pos></datetime>
+        <text name="lblGenre"><pos>0.161 0.29</pos></text>
+        <text name="mdGenre"><pos>0.161 0.313</pos></text>
+        <text name="lblPlayers"><pos>0.266 0.29</pos></text>
+        <text name="mdPlayers"><pos>0.266 0.313</pos></text>
+        <text name="lblDeveloper"><pos>0.371 0.29</pos></text>
+        <text name="mdDeveloper"><pos>0.371 0.313</pos></text>
+        <text name="lblPublisher"><pos>0.476 0.29</pos></text>
+        <text name="mdPublisher"><pos>0.476 0.313</pos></text>
+
+        <text name="lblPlaytime"><pos>0.056 0.355</pos></text>
+        <text name="mdPlaytime"><pos>0.056 0.378</pos></text>
+        <text name="lblPlaycount"><pos>0.161 0.355</pos></text>
+        <text name="mdPlaycount"><pos>0.161 0.378</pos></text>
+        <text name="lblLastplayed"><pos>0.266 0.355</pos></text>
+        <datetime name="mdLastplayed"><pos>0.266 0.378</pos></datetime>
+        <text name="lblEmulator"><pos>0.371 0.355</pos></text>
+        <text name="mdEmulator"><pos>0.371 0.378</pos></text>
+        <text name="lblFile"><pos>0.476 0.355</pos></text>
+        <text name="mdFile"><pos>0.476 0.378</pos></text>
+
+        <image name="accentLine">
+            <pos>0.056 0.43</pos>
+            <size>0.04 0.004</size>
+            <path>${pixel}</path>
+            <color>${accent}</color>
+            <zIndex>40</zIndex>
+        </image>
+        <text name="description">
+            <pos>0.056 0.452</pos>
+            <size>0.5 0.128</size>
+            <metadata>description</metadata>
+            <container>true</container>
+            <fontPath>${fontLight}</fontPath>
+            <fontSize>${fsBody}</fontSize>
+            <lineSpacing>1.4</lineSpacing>
+            <color>${textDim}</color>
+            <zIndex>40</zIndex>
+        </text>
+
+        <image name="selPulse">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.76</pos>
+            <size>0.3 0.533</size>
+            <path>./assets/images/softglow.svg</path>
+            <color>${accent}</color>
+            <opacity>0.3</opacity>
+            <zIndex>45</zIndex>
+        </image>
+        <image name="selBar">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.915</pos>
+            <size>0.05 0.005</size>
+            <path>${pixel}</path>
+            <color>${accent}</color>
+            <cornerRadius>0.002</cornerRadius>
+            <zIndex>46</zIndex>
+        </image>
+        <carousel name="gamelistCarousel">
+            <type>horizontal</type>
+            <pos>0 0.615</pos>
+            <size>1 0.29</size>
+            <imageType>cover</imageType>
+            <itemSize>0.1 0.24</itemSize>
+            <itemScale>1.22</itemScale>
+            <maxItemCount>8</maxItemCount>
+            <itemVerticalAlignment>bottom</itemVerticalAlignment>
+            <unfocusedItemOpacity>0.45</unfocusedItemOpacity>
+            <imageCornerRadius>0.005</imageCornerRadius>
+            <imageInterpolation>linear</imageInterpolation>
+            <fastScrolling>true</fastScrolling>
+            <color>00000000</color>
+            <fontPath>${fontSemi}</fontPath>
+            <fontSize>0.022</fontSize>
+            <textColor>${textColor}</textColor>
+            <textBackgroundColor>${panelColor}</textBackgroundColor>
+            <zIndex>50</zIndex>
+        </carousel>
+    </view>
+</theme>

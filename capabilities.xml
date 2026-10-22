@@ -1,0 +1,79 @@
+<!-- Theme capabilities for afterglow-es-de -->
+<themeCapabilities>
+    <themeName>Afterglow</themeName>
+
+    <aspectRatio>16:9</aspectRatio>
+    <aspectRatio>16:10</aspectRatio>
+
+    <fontSize>medium</fontSize>
+    <fontSize>large</fontSize>
+
+    <!-- Accent colours -->
+    <colorScheme name="ice">
+        <label>Ice blue</label>
+    </colorScheme>
+    <colorScheme name="system">
+        <label>System colour</label>
+    </colorScheme>
+    <colorScheme name="crimson">
+        <label>Crimson</label>
+    </colorScheme>
+    <colorScheme name="ember">
+        <label>Ember orange</label>
+    </colorScheme>
+    <colorScheme name="gold">
+        <label>Gold</label>
+    </colorScheme>
+    <colorScheme name="emerald">
+        <label>Emerald</label>
+    </colorScheme>
+    <colorScheme name="teal">
+        <label>Teal</label>
+    </colorScheme>
+    <colorScheme name="violet">
+        <label>Violet</label>
+    </colorScheme>
+    <colorScheme name="rose">
+        <label>Rose</label>
+    </colorScheme>
+    <colorScheme name="mono">
+        <label>Monochrome</label>
+    </colorScheme>
+
+    <!-- Looks -->
+    <variant name="cinematicList">
+        <label>Cinematic - list</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="cinematicCarousel">
+        <label>Cinematic - carousel</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="cleanList">
+        <label>Clean - list</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="cleanCarousel">
+        <label>Clean - carousel</label>
+        <selectable>true</selectable>
+    </variant>
+
+    <transitions name="fadeSlide">
+        <label>Fade (smooth)</label>
+        <selectable>true</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>fade</systemToGamelist>
+        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToSystem>fade</gamelistToSystem>
+        <startupToSystem>fade</startupToSystem>
+        <startupToGamelist>fade</startupToGamelist>
+    </transitions>
+    <transitions name="instantAll">
+        <label>Instant</label>
+        <selectable>true</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>instant</systemToGamelist>
+        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToSystem>instant</gamelistToSystem>
+    </transitions>
+</themeCapabilities>
